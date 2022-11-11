@@ -1,6 +1,6 @@
 <template>
-  <section class="upper-footer">
-    <div class="jumbo-footer">
+  <section class="upper-footer jumbo-footer">
+    <div class="container my-container">
       <div class="lists">
         <div class="up-list">
           <div>
@@ -180,6 +180,10 @@ export default {
   background-image: url(../assets/img/footer-bg.jpg);
   width: 100%;
   height: 400px;
+}
+.my-container {
+  width: 1170px;
+  margin-left: 18rem;
 }
 .up-list {
   display: flex;

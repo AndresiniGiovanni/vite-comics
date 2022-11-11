@@ -1,7 +1,7 @@
 <template>
   <section>
     <main>
-      <div>Content goes here</div>
+      <div class="">Content goes here</div>
     </main>
   </section>
 </template>
