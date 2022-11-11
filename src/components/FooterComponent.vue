@@ -46,9 +46,14 @@
   </section>
 
   <section class="lower-footer">
-    <div class="internal">
+    <div class="internal d-flex justify-content-between">
       <button class="my-btn">sign-up now!</button>
-      <div class="follow">follow us</div>
+      <div>
+        <span class="follow me-4">follow us</span>
+        <span class="me-3" v-for="(icons, index) in icons" key="index">
+          <img class="" :src="icons.img" alt="" />
+        </span>
+      </div>
     </div>
   </section>
 </template>
@@ -167,6 +172,23 @@ export default {
           url: "#",
         },
       ],
+      icons: [
+        {
+          img: "/public/img/footer-facebook.png",
+        },
+        {
+          img: "/public/img/footer-twitter.png",
+        },
+        {
+          img: "/public/img/footer-youtube.png",
+        },
+        {
+          img: "/public/img/footer-pinterest.png",
+        },
+        {
+          img: "/public/img/footer-periscope.png",
+        },
+      ],
     };
   },
 };
@@ -225,7 +247,6 @@ export default {
   height: 150px;
   background-color: $darkgrey;
   .internal {
-    @include dflex;
     max-width: 1170px;
     margin: 0 auto;
   }
@@ -241,7 +262,7 @@ export default {
   }
 
   .follow {
-    font-size: 20px;
+    font-size: 22px;
     text-transform: uppercase;
     font-weight: 600;
 
