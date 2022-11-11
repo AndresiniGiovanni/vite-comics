@@ -79,7 +79,7 @@ export default {
 
 header {
   max-width: 1170px;
-  height: 150px;
+  height: 130px;
   margin: 0 auto;
   @include dflex;
 
